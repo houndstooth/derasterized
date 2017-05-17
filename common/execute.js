@@ -6,10 +6,12 @@ import iterator from '../../shared/utilities/iterator'
 export default () => {
 	iterator(GRID_SIZE).forEach(x => {
 		iterator(GRID_SIZE).forEach(y => {
+			const { originColor, otherColor } = calculateSquareType({ x, y })
 			derasterizedSquare({
 				origin: [ x * SQUARE_SIZE, y * SQUARE_SIZE ],
 				size: SQUARE_SIZE,
-				squareType: calculateSquareType({ x, y })
+				originColor,
+				otherColor
 			})
 		})
 	})

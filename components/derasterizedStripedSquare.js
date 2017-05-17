@@ -1,5 +1,5 @@
 import render from '../../shared/render/render'
-import drawSolidSquare from '../../shared/render/drawSolidSquare'
+import drawStripedSquare from '../../shared/render/drawStripedSquare'
 import { UNIT } from '../../shared/common/customize'
 import scalePoint from '../../shared/utilities/scalePoint'
 
@@ -7,7 +7,7 @@ export default ({ originColor, otherColor, size, origin, scaleFromGridCenter }) 
 	origin = scalePoint({ point: origin, scaleFromGridCenter })
 	const sizedUnit = size * UNIT
 
-	drawSolidSquare({ origin, size, color: otherColor });
+	drawStripedSquare({ origin, size, originColor: otherColor, otherColor });
 
 	// BY AREA STYLE
 	let coordinates = [
