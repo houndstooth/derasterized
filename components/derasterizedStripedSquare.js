@@ -1,10 +1,10 @@
 import render from '../../shared/render/render'
 import drawSolidSquare from '../../shared/render/drawSolidSquare'
 import { UNIT } from '../../shared/common/customize'
-import scaleOrigin from '../../shared/utilities/scaleOrigin'
+import scalePoint from '../../shared/utilities/scalePoint'
 
-export default ({ originColor, otherColor, size, origin, scaleFromCenter }) => {
-	origin = scaleOrigin({ origin, scaleFromCenter })
+export default ({ originColor, otherColor, size, origin, scaleFromGridCenter }) => {
+	origin = scalePoint({ point: origin, scaleFromGridCenter })
 	const sizedUnit = size * UNIT
 
 	drawSolidSquare({ origin, size, color: otherColor });
