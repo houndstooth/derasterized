@@ -1,4 +1,4 @@
-import stripeUtilities from '../../src/utilities/stripeUtilities'
+import stripeUtilities from '../../../../src/utilities/stripeUtilities'
 
 export default () => stripeUtilities.perStripe({ getStripePosition: derasterizedByAreaStripePosition })
 
