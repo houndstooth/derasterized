@@ -1,5 +1,7 @@
 import { perStripe } from '../../../../src'
 
-export default () => perStripe({ getStripePosition: derasterizedByAreaStripePosition })
+const getDerasterizedByAreaStripePositions = () => perStripe({ getStripePosition: derasterizedByAreaStripePosition })
 
 const derasterizedByAreaStripePosition = () => 0
+
+export default getDerasterizedByAreaStripePositions
