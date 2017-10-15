@@ -1,9 +1,8 @@
 import { perStripe, StripePosition } from '../../../../src'
 
-const getDerasterizedByAreaStripePositions: {(): StripePosition[]} = () => {
-	return perStripe({ getStripePosition: derasterizedByAreaStripePosition })
-}
+const getDerasterizedByAreaStripePositions: {(): StripePosition[]} = () =>
+	perStripe({ getStripePosition: derasterizedByAreaStripePosition })
 
-const derasterizedByAreaStripePosition: {(): StripePosition } = () => 0
+const derasterizedByAreaStripePosition: {(): StripePosition } = () => 0 as any
 
 export default getDerasterizedByAreaStripePositions
