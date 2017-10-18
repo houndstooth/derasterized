@@ -5,4 +5,4 @@ const getDerasterizedByAreaStripePositions: () => StripePosition[] = () =>
 
 const derasterizedByAreaStripePosition: () => StripePosition = () => 0 as any
 
-export default getDerasterizedByAreaStripePositions
+export { getDerasterizedByAreaStripePositions }
