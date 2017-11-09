@@ -1,5 +1,4 @@
-import { perStripe, StripePosition } from '../../../../src'
-import * as to from '../../../../src/to'
+import { perStripe, StripePosition, to } from '../../../../src'
 
 const getDerasterizedByAreaStripePositions: () => StripePosition[] =
 	(): StripePosition[] => perStripe({ getStripePosition: derasterizedByAreaStripePosition })
